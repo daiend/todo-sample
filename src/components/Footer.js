@@ -27,7 +27,6 @@ export default class Footer extends Component {
         <Text
           style={styles.text}
           onPress={this.onAddPress.bind(this)}
-          disabled={!this.state.text.length}
         >
           追加
         </Text>
@@ -60,8 +59,5 @@ const styles = StyleSheet.create({
     padding: 10,
     fontSize: 15,
     color: '#0076ff'
-  },
-  isTextDisabled: {
-    color: '#999999'
   }
 });
